@@ -1,0 +1,10 @@
+START
+
+INPUT Length
+INPUT Width
+
+SET Area = Length * Width
+
+PRINT Area
+
+END
