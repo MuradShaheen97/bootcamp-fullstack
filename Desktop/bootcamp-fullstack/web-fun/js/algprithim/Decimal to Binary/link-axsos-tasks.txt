@@ -1,0 +1,4 @@
+(25)decimalÑ>(11001)binary
+(100)decimal--->(1100100)binary
+(255)decimal---->(11111111)binary
+(1024)decimal--->(10000000000)binary

@@ -1,0 +1,40 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.big{
+    border-top: 3px solid black;
+    width: 40%;
+    background-color:rgb(237, 238, 255) ;
+    padding: 20px;
+    display: flex ;
+    flex-direction: column;
+    justify-content: space-evenly;
+gap: 20px;
+text-align: center;
+}
+
+.box1{
+    background-color: #59c6ff;
+    display: flex;
+    justify-content:space-between;
+}
+img{
+    height: 200px;
+}
+.box2{
+    background-color: rgb(191, 154, 172);
+    display: flex;
+    justify-content: space-evenly;
+}
+.box3{
+    background-color: rgb(252, 252, 255);
+display: flex;
+justify-content: space-around;
+}
+.p1{
+    margin: 0px;
+}

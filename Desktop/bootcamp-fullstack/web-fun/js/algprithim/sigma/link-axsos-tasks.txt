@@ -1,0 +1,14 @@
+START
+
+INPUT n
+SET sum = 0
+SET i = 1
+
+WHILE i <= n DO
+    sum = sum + i
+    i = i + 1
+END WHILE
+
+OUTPUT sum
+
+END

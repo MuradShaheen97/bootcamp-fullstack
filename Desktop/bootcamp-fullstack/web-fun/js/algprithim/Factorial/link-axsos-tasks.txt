@@ -1,0 +1,22 @@
+START
+
+PRINT "Enter a non-negative integer:"
+INPUT n
+
+IF n is not an integer OR n < 0 THEN
+    PRINT "Invalid input. Please enter a non-negative integer."
+    STOP
+END IF
+
+IF n = 0 OR n = 1 THEN
+    result = 1
+ELSE
+    result = 1
+    FOR i FROM 2 TO n DO
+        result = result * i
+    END FOR
+END IF
+
+PRINT "The factorial of ", n, " is: ", result
+
+END
