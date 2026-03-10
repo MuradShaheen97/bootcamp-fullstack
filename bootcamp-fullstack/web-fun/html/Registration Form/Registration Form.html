@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Registration Form</title>
+    </head>
+    <body>
+        <h1>Registration Form</h1>
+        <form>
+            <div>
+                <label for="first name">First Name: *</label>
+                <input type="text" name="firstName" id="first name">
+            </div>
+            <div>
+                <label for="lastname">last Name: *</label>
+                <input type="text" name="lastname" id="lastname">
+            </div>
+            <div>
+                <label for="emailaddres">emailaddres: *</label>
+                <input type="email" name="emailaddres" id="emailaddres">
+            </div>
+            <div>
+                <label for="password">password: *</label>
+                <input type="password" name="password" id="password">
+            </div>
+            <div>
+                <label for>confirm password: *</label>
+                <input type="password" name="confarim password" id="confirm">
+            </div>
+            <div>
+                <label for>birthday: *</label>
+                <input type="date" name="birthday" id>
+            </div>
+            <p>Gender Identity:</p>
+            <label>
+                <input type="radio" name="gender" value="male">
+                Male
+            </label>
+            <label>
+                <input type="radio" name="gender" value="female">
+                Female
+            </label>
+            <label>
+                <input type="radio" name="gender" value="non-binary">
+                Non-binary
+            </label>
+            <label>
+                <input type="radio" name="gender" value="no-answer">
+                I prefer not to answer
+            </label>
+            <br><br>
+            <label>
+                A short description about myself:
+                <br>
+                <textarea name="description" rows="4" cols="40"></textarea>
+            </label>
+            <br><br>
+            <label>
+                Favorite Language:
+                <select name="language">
+                    <option value="javascript">JavaScript</option>
+                    <option value="python">Python</option>
+                    <option value="java">Java</option>
+                    <option value="csharp">C#</option>
+                </select>
+            </label>
+            <br><br>
+            <label>
+                <input type="checkbox" name="updates">
+                Yes, I would like to receive periodic email updates
+            </label>
+            <br><br>
+            <input type="submit" value="Create Account">
+            <p>* Indicates a required field</p>
+        </form>
+    </body>
+</html>

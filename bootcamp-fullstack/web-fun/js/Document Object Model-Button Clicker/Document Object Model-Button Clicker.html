@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Dojonary</title>
+        <link rel="stylesheet"
+            href="/web fun/js/Document Object Model-Button Clicker/Document Object Model-Button Clicker.css" />
+    </head>
+    <body>
+        <div class="container">
+            <!-- Top Bar -->
+            <div class="top-bar">
+                <h1>Dojonary</h1>
+                <input type="text" placeholder="Search" class="search-box" />
+                <button class="login-btn"
+                    onclick="changeLogin(this)">Login</button>
+            </div>
+            <!-- Main Content -->
+            <div class="main-content">
+                <!-- Left Side -->
+                <div class="left-side">
+                    <div class="card">
+                        <div class="word-section">
+                            <h2>ninja</h2>
+                            <p class="noun"><em>noun</em></p>
+                            <p>Plural: <em>ninjas</em></p>
+                            <button class="like-btn" onclick="likeAlert()">13
+                                likes</button>
+                        </div>
+                        <div class="definition-section">
+                            <p>
+                                A practitioner skilled in the
+                                <a href="#">Japanese</a> art of
+                                <a href="#">ninjutsu</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="word-section">
+                            <h2>ninja</h2>
+                            <p class="noun"><em>noun</em></p>
+                            <p>Plural: <em>ninjas</em></p>
+                            <button class="like-btn" onclick="likeAlert()">37
+                                likes</button>
+                        </div>
+                        <div class="definition-section">
+                            <p>
+                                A <a href="#">programmer</a> who breaks
+                                down problems with <a href="#">zen</a>-like
+                                focus
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Right Side -->
+                <div class="right-side">
+                    <div class="side-card">
+                        <h3>Dojonary is defined by
+                            <strong>YOU</strong></h3>
+                        <button class="add-btn" onclick="removeButton(this)">Add
+                            Definition</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script
+            src="/web fun/js/Document Object Model-Button Clicker/Document Object Model-Button Clicker.js"></script>
+    </body>
+</html>
