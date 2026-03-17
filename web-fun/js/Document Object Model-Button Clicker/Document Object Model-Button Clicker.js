@@ -6,6 +6,12 @@ function changeLogin(element) {
   }
 }
 
+let button = document.querySelector(".login-btn");
+
+button.addEventListener("click", function () {
+  button.style.backgroundColor = "red";
+});
+
 function removeButton(element) {
   element.remove();
 }
