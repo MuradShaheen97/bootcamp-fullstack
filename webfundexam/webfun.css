@@ -1,0 +1,127 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #eeeff2;
+}
+
+.navbar {
+  background: white;
+  padding: 20px 40px;
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ccc;
+}
+.body{
+    background-image: url(./imgweb/hero-bg.png);
+}
+.logo {
+  font-size: 32px;
+  font-weight: bold;
+  color: #01020e;
+}
+
+.links a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #2640ee;
+  font-size: 24px;
+  text-decoration: underline;
+}
+
+.hero,
+.about {
+  width: 80%;
+  margin: 40px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+}
+
+.hero-text,
+.about-text {
+  width: 45%;
+}
+
+.hero-text h1,
+.about-text h2,
+.services-top h2 {
+  color: #04081f;
+}
+
+.hero-text p,
+.about-text p {
+  font-size: 15px;
+  color: #070707;
+}
+
+.hero-image img,
+.about-image img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 10px;
+}
+
+button {
+  background-color: #2640ee;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.services-section {
+  width: 80%;
+  margin: 40px auto;
+}
+
+.services-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.services {
+  margin-top: 20px;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: white;
+  width: 250px;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.card p {
+  font-size: 18px;
+  color: #333;
+}
+.services{
+    display: flex;
+    justify-content: space-around;
+}
+.scard2{
+    color: red;
+}
+.scard3{
+    text-decoration: underline;
+}
+#addServiceBtn{
+    align-items: center;
+}
+.services-top{
+    width: 60%;
+}

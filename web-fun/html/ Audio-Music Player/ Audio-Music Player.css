@@ -1,0 +1,32 @@
+body {
+  font-family: Arial;
+}
+
+.container {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+}
+
+.player {
+  flex: 2;
+  border: 1px solid #ccc;
+  padding: 20px;
+}
+
+.playlist {
+  flex: 1;
+  border: 1px solid #ccc;
+  padding: 20px;
+}
+
+.playlist div {
+  padding: 10px;
+  margin: 5px 0;
+  background: #eee;
+  cursor: pointer;
+}
+
+.playlist div:hover {
+  background: #ccc;
+}
