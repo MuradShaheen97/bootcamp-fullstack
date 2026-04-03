@@ -10,23 +10,29 @@ body {
 
 .player {
   flex: 2;
-  border: 1px solid #ccc;
+  border: 10px solid #da0bb1;
   padding: 20px;
+  background-color: #b0e013;
+  border-radius: 30px;
+  border: 10%;
 }
 
 .playlist {
   flex: 1;
-  border: 1px solid #ccc;
+  border: 10px solid #39dd27;
   padding: 20px;
+  background-color: #e4223c;
+  border: 10%;
+  border-radius: 30px;
 }
 
 .playlist div {
   padding: 10px;
   margin: 5px 0;
-  background: #eee;
+  background: #b15656;
   cursor: pointer;
 }
 
 .playlist div:hover {
-  background: #ccc;
+  background: #b0e013;
 }
