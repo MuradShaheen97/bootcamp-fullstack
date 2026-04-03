@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>System Monitor</title>
+        <link rel="stylesheet" href="./Meter-and-progress.css">
+    </head>
+
+    <body>
+
+        <div class="container">
+            <h2>System Performance Monitor</h2>
+
+            <div class="grid">
+
+                <!-- meter -->
+                <div class="card">
+                    <p>CPU Usage</p>
+                    <meter value="65" min="0" max="100"></meter>
+                </div>
+
+                <div class="card">
+                    <p>RAM Usage</p>
+                    <meter value="40" min="0" max="100"></meter>
+                </div>
+
+                <div class="card">
+                    <p>Disk Usage</p>
+                    <meter value="80" min="0" max="100"></meter>
+                </div>
+
+                <!-- progress -->
+                <div class="card">
+                    <p>File Transfer</p>
+                    <progress value="70" max="100"></progress>
+                </div>
+
+                <div class="card">
+                    <p>Network Activity</p>
+                    <progress value="30" max="100"></progress>
+                </div>
+
+                <div class="card">
+                    <p>System Tasks</p>
+                    <progress value="45" max="100"></progress>
+                </div>
+
+            </div>
+        </div>
+
+    </body>
+</html>
