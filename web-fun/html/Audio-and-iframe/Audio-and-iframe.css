@@ -1,0 +1,48 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f2f4f8;
+}
+
+.navbar {
+  background: blue;
+  color: white;
+  padding: 15px 20px;
+}
+
+.container {
+  display: flex;
+  padding: 20px;
+  gap: 20px;
+}
+
+.sidebar {
+  width: 200px;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.sidebar p {
+  margin: 15px 0;
+}
+
+.content {
+  flex: 1;
+}
+
+.box {
+  background: white;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+
+audio {
+  width: 100%;
+}
+
+iframe {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}

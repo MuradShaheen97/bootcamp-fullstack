@@ -14,8 +14,9 @@
                 <p id="title">Song 1</p>
 
                 <audio id="audio" controls>
-                    <source src="song1.mp3" type="audio/mpeg">
-                    <source src="song1.ogg" type="audio/ogg">
+                    <source src="./" type="audio/mpeg">
+                    <source src="./audio/that-happy-feeling_loop-02.wav"
+                        type="audio/ogg">
                 </audio>
             </div>
 
@@ -23,9 +24,15 @@
             <div class="playlist">
                 <h3>Playlist</h3>
 
-                <div onclick="playSong('song1.mp3','Song 1')">Song 1</div>
-                <div onclick="playSong('song2.mp3','Song 2')">Song 2</div>
-                <div onclick="playSong('song3.mp3','Song 3')">Song 3</div>
+                <div
+                    onclick="playSong('./audio/that-happy-feeling_loop-02.wav','Song 1')">Song
+                    1</div>
+                <div
+                    onclick="playSong('./audio/that-happy-feeling_loop-02.wav','Song 2')">Song
+                    2</div>
+                <div
+                    onclick="playSong('./audio/that-happy-feeling_loop-02.wav','Song 3')">Song
+                    3</div>
 
             </div>
 
