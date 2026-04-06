@@ -1,0 +1,47 @@
+body {
+  font-family: Arial;
+  background: #f2f2f2;
+  padding: 40px;
+}
+
+h1 {
+  text-align: center;
+  letter-spacing: 2px;
+}
+
+section {
+  background: white;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 600px;
+}
+
+/* TRANSFORMATION */
+.capitalize {
+  text-transform: capitalize;
+}
+
+.uppercase {
+  text-transform: uppercase;
+  color: red;
+}
+
+.lowercase {
+  text-transform: lowercase;
+  color: green;
+}
+
+/* SPACING */
+.letter {
+  letter-spacing: 3px;
+}
+
+.word {
+  word-spacing: 10px;
+}
+
+.line {
+  line-height: 1.8;
+  background: #ddd;
+  padding: 10px;
+}
