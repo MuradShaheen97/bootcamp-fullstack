@@ -1,0 +1,61 @@
+body {
+  margin: 0;
+  padding: 30px;
+  font-family: Arial, sans-serif;
+}
+
+/* Title */
+h1 {
+  text-align: center;
+  font-size: clamp(26px, 5vw, 56px);
+}
+
+/* Card */
+.card {
+  background: #eee;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 700px;
+}
+
+/* Titles */
+.section-title {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* ✅ CARD 1: Image shrink */
+.img {
+  width:100%;
+  max-width: 400%; /* ما يكبر اكثر من هيك */
+}
+
+/* ✅ CARD 2: Button never too small */
+.btn {
+  width: 50%;
+  min-width: 150px; /* الحد الأدنى */
+  padding: 10px;
+}
+
+/* ✅ CARD 3: Size based on text */
+.text-box {
+  display: inline-block;
+  background: lightblue;
+  padding: 10px;
+}
+
+/* ✅ CARD 4: full width minus 80px */
+.offset-box {
+  width: calc(100% - 80px);
+  height: 50px;
+  background: orange;
+}
+
+/* ✅ CARD 5: Resizable box */
+.resize-box {
+  width: 50%;
+  min-width: 200px;
+  max-width: 400px;
+  height: 50px;
+  background: green;
+}
