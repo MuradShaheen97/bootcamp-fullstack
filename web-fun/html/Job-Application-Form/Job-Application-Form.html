@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Job Application Form</title>
+    </head>
+    <body>
+
+        <h2>Job Application Form</h2>
+
+        <form>
+
+            <!-- Name -->
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" required
+                title="Enter your full name"><br><br>
+
+            <!-- Email -->
+            <label for="email">Email:</label>
+            <input type="email" id="email" required
+                title="Enter a valid email"><br><br>
+
+            <!-- Phone -->
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" required><br><br>
+
+            <!-- Experience -->
+            <label for="exp">Years of Experience:</label>
+            <input type="number" id="exp" min="0" max="30"
+                title="Between 0 and 30"><br><br>
+
+            <!-- Work Type -->
+            <fieldset>
+                <legend>Preferred Work Type</legend>
+
+                <input type="radio" name="work" id="remote">
+                <label for="remote">Remote</label>
+
+                <input type="radio" name="work" id="onsite">
+                <label for="onsite">On-site</label>
+
+                <input type="radio" name="work" id="hybrid">
+                <label for="hybrid">Hybrid</label>
+            </fieldset>
+
+            <br>
+
+            <!-- File Upload -->
+            <label>Upload CV:</label>
+            <input type="file"><br><br>
+
+            <!-- Cover Letter (Bonus) -->
+            <label for="cover">Cover Letter:</label><br>
+            <textarea id="cover"
+                title="Write a short cover letter"></textarea><br><br>
+
+            <!-- Submit -->
+            <button type="submit">Submit</button>
+
+        </form>
+
+    </body>
+</html>
