@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f2f2f2;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.team-section {
+  width: 900px;
+  background: #ececec;
+  border: 2px solid #d4d4d4;
+  padding: 40px;
+  text-align: center;
+}
+
+.team-section h1 {
+  font-size: 28px;
+  color: #333;
+  margin-bottom: 30px;
+  font-weight: 600;
+}
+
+.team-container {
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 165px;
+  background: #fff;
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+.avatar {
+  width: 110px;
+  height: 110px;
+  margin: 0 auto 15px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.avatar1 {
+  background-image: url("avatar1.png");
+}
+
+.avatar2 {
+  background-image: url("avatar2.png");
+}
+
+/* style 1 */
+.circle {
+  -webkit-mask-image: radial-gradient(circle, white 70%, transparent 71%);
+  mask-image: radial-gradient(circle, white 70%, transparent 71%);
+  mask-repeat: no-repeat;
+  mask-size: cover;
+  mask-position: center;
+}
+
+/* style 2 */
+.rounded {
+  -webkit-mask-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect x='5' y='5' width='90' height='90' rx='25' fill='white'/></svg>");
+  mask-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect x='5' y='5' width='90' height='90' rx='25' fill='white'/></svg>");
+  mask-repeat: no-repeat;
+  mask-size: cover;
+  mask-position: center;
+}
+
+.card h3 {
+  font-size: 14px;
+  color: #222;
+  margin-bottom: 6px;
+}
+
+.card p {
+  font-size: 12px;
+  color: #777;
+}
