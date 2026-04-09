@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+}
+.sidebar {
+  width: 220px;
+  background: #1f2a38;
+  color: white;
+  padding: 20px;
+}
+
+.sidebar h2 {
+  margin-bottom: 20px;
+
+  /* TEXT SHADOW 🔥 */
+  text-shadow: 2px 2px 5px black;
+}
+
+.sidebar ul {
+  list-style: none;
+}
+
+.sidebar li {
+  padding: 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.sidebar .active {
+  background: #2f3e52;
+  border-radius: 5px;
+}
+.main {
+  flex: 1;
+  padding: 30px;
+  background: #f4f6f9;
+}
+
+.main h1 {
+  margin-bottom: 20px;
+
+  /* MULTIPLE TEXT SHADOW 🔥 */
+  text-shadow: 1px 1px 2px gray,
+               2px 2px 5px lightgray;
+}
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.card {
+  background: white;
+  padding: 20px;
+  width: 200px;
+  border-radius: 10px;
+
+  /* NORMAL SHADOW */
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+.inset {
+  box-shadow: inset 0 4px 10px rgba(0,0,0,0.2);
+}
+.multi {
+  box-shadow:
+    0 4px 6px rgba(0,0,0,0.1),
+    0 10px 20px rgba(0,0,0,0.2);
+}
