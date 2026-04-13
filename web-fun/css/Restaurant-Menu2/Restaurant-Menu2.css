@@ -1,0 +1,184 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f3f3f3;
+  padding: 40px 20px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 32px;
+}
+
+.menu-card {
+  width: 420px;
+  margin: 0 auto;
+  background-color: white;
+  border-radius: 14px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  padding: 20px 20px 10px;
+}
+
+.menu-list li {
+  margin-bottom: 22px;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 14px;
+}
+
+.menu-list li:last-child {
+  border-bottom: none;
+}
+
+.menu-list h3 {
+  font-size: 18px;
+  margin-bottom: 4px;
+  color: #111;
+}
+
+.menu-list p {
+  font-size: 14px;
+  color: #777;
+  margin-bottom: 4px;
+}
+
+.menu-list span {
+  color: #f28c28;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.item1 {
+  list-style: none;
+  position: relative;
+  padding-left: 90px;
+}
+.item1::before{
+    content: "";
+    position: absolute;
+    left: 0px;
+    top: 5px;
+    width: 60px;
+    height: 60px;
+    background-image: url(./shawarma.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 2px solid #f28c28;
+    border-radius: 50%;
+    list-style-position: inside;
+    scale: 1.2;
+}
+
+.item2 {
+  list-style: none;
+  position: relative;
+  padding-left: 90px;
+}
+.item2::before{
+    content: "";
+    position: absolute;
+    left: 0px;
+    top: 5px;
+    width: 60px;
+    height: 60px;
+    background-image: url(./hummus.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 2px solid #f28c28;
+    border-radius: 50%;
+    list-style-position: inside;
+    scale: 1.2;
+}
+.item3 {
+  list-style: none;
+  position: relative;
+  padding-left: 90px;
+}
+.item3::before{
+    content: "";
+    position: absolute;
+    left: 0px;
+    top: 5px;
+    width: 60px;
+    height: 60px;
+    background-image: url(./falafel.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 2px solid #f28c28;
+    border-radius: 50%;
+    list-style-position: inside;
+    scale: 1.2;
+}
+.item4 {
+  list-style: none;
+  position: relative;
+  padding-left: 90px;
+}
+.item4::before{
+    content: "";
+    position: absolute;
+    left: 0px;
+    top: 5px;
+    width: 60px;
+    height: 60px;
+    background-image: url(./kebab.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 2px solid #f28c28;
+    border-radius: 50%;
+    list-style-position: inside;
+    scale: 1.2;
+}
+.item5 {
+  list-style: none;
+  position: relative;
+  padding-left: 90px;
+}
+.item5::before{
+    content: "";
+    position: absolute;
+    left: 0px;
+    top: 5px;
+    width: 60px;
+    height: 60px;
+    background-image: url(./tabbouleh.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 2px solid #f28c28;
+    border-radius: 50%;
+    list-style-position: inside;
+    scale: 1.2;
+}
+.item6 {
+  list-style: none;
+  position: relative;
+  padding-left: 90px;
+}
+.item6::before{
+    content: "";
+    position: absolute;
+    left: 0px;
+    top: 5px;
+    width: 60px;
+    height: 60px;
+    background-image: url(./fattoush.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 2px solid #f28c28;
+    border-radius: 50%;
+    list-style-position: inside;
+    scale: 1.2;
+
+
+}

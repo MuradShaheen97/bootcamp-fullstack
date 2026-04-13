@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f3f3f3;
+  padding: 40px 20px;
+}
+
+.menu-wrapper {
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 32px;
+  color: #111;
+}
+
+.menu-card {
+  background-color: #fff;
+  padding: 20px 25px;
+  border-radius: 16px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.12);
+}
+
+.menu-list {
+  padding-left: 30px;
+}
+
+.menu-list li {
+  margin-bottom: 20px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #eee;
+}
+
+.menu-list li:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+}
+
+.menu-list h3 {
+  font-size: 18px;
+  margin-bottom: 5px;
+  color: #111;
+}
+
+.menu-list p {
+  font-size: 14px;
+  color: #777;
+  margin-bottom: 5px;
+}
+
+.menu-list span {
+  font-size: 16px;
+  font-weight: bold;
+  color: #e67e22;
+}
+
+.shawarma {
+  list-style-image: url(./images/shawarma-1.png);
+}
+
+.hummus {
+  list-style-image: url(./images/hummus-1.png);
+}
+
+.falafel {
+  list-style-image: url(./images/falafel-1.png);
+}
+
+.kebab {
+  list-style-image: url(./images/kebab-1.png);
+}
+
+.tabbouleh {
+  list-style-image: url(./images/tabbouleh-1.png);
+}
+
+.fattoush {
+  list-style-image: url(./images/fattoush-1.png);
+}
