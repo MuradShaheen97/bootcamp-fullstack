@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background-color: white;
+    width: 500px;
+    padding: 40px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 30px;
+    font-size: 38px;
+}
+
+.btn {
+    display: block;
+    width: 300px;
+    margin: 15px auto;
+    padding: 15px;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    font-size: 22px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* Hover Button */
+.hover-btn {
+    background-color: #3498db;
+}
+
+.hover-btn:hover {
+    background-color: #2980b9;
+}
+
+/* Active Button */
+.active-btn {
+    background-color: #9b59b6;
+}
+
+.active-btn:active {
+    background-color: #6c3483;
+}
+
+/* Focus Button */
+.focus-btn {
+    background-color: #e67e22;
+}
+
+.focus-btn:focus {
+    outline: none;
+    box-shadow: 0 0 8px orange;
+}
+
+/* Grow Button */
+.grow-btn {
+    background-color: #27ae60;
+}
+
+.grow-btn:hover {
+    transform: scale(1.1);
+}
+
+/* Disabled Button */
+.disabled-btn {
+    background-color: #bdc3c7;
+    cursor: not-allowed;
+}
