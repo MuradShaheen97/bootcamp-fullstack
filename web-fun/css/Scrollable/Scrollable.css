@@ -33,7 +33,7 @@ h1 {
     padding: 20px;
     border-radius: 5px;
     overflow: auto;
-    white-space: pre-wrap;
+    /* white-space: pre-wrap; */
     scrollbar-color: #ec3401 red ; 
     scrollbar-width:thin; 
     border-radius: 25px;
