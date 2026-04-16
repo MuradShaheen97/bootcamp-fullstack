@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background-color: #f4f4f4;
+  color: rgb(200, 232, 232);
+  background-color: #333;
+}
+
+h1, h2 {
+  margin-bottom: 10px;
+}
+
+p {
+  margin-bottom: 15px;
+}
+
+hr {
+  margin: 30px 0;
+}
+
+/* General style for boxes */
+.task1-grid div,
+.task2-grid div,
+.bonus-grid div,
+header,
+aside,
+main,
+footer {
+  background-color: rgb(25, 142, 160);
+  color: white;
+  padding: 20px;
+  text-align: center;
+  border: 2px solid #222;
+  border-radius: 25px;
+}
+
+/* TASK 1 */
+.task1-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+/* TASK 2 */
+.task2-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+@media (max-width: 700px) {
+  .task2-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 450px) {
+  .task2-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* TASK 3 */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 15px;
+}
+
+.gallery img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+  border: 3px solid #333;
+  border-radius: 25px;
+}
+
+/* TASK 4 */
+.layout {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  grid-template-areas:
+    "header header"
+    "sidebar content"
+    "footer footer";
+  gap: 15px;
+}
+
+header {
+  grid-area: header;
+}
+
+aside {
+  grid-area: sidebar;
+}
+
+main {
+  grid-area: content;
+  min-height: 200px;
+}
+
+footer {
+  grid-area: footer;
+}
+
+@media (max-width: 600px) {
+  .layout {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "header"
+      "sidebar"
+      "content"
+      "footer";
+  }
+}
+
+/* TASK 5 */
+.bonus-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+
+.wide {
+  grid-column: span 2;
+}
