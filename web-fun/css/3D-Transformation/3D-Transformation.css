@@ -55,8 +55,25 @@ body {
     left: 0;
     transform-origin: left center;
     transition: 0.8s steps(4);
+    
 }
 
 .door.open {
     transform: perspective(1200px) rotateY(-125deg);
+    animation: doorcolor 3s ease infinite;
+}
+@keyframes doorcolor{
+    0%{
+        background:#b45a09;
+        box-shadow: 0 0 5px green;
+        
+    }
+    50%{
+        background:#13b7ac;
+        box-shadow: 0 0 15px yellow;
+    }
+    100%{
+        background:#3432db;
+        box-shadow: 0 0 25px red;
+    }
 }
