@@ -1,0 +1,57 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: aqua;
+    display: flex;
+    animation:boodycolor 3s ease infinite;
+}
+.circle{
+    width: 25%;
+    height: 25%;
+    background-color:lightcoral;
+    box-shadow: 0 0 25px rgb(8, 55, 71);
+    border-radius: 50%;
+    animation:breath 3s ease infinite;
+}
+
+@keyframes breath{
+  0%{
+     width: 25%;
+    height: 25%;
+        background-color:lightcoral;
+  }
+  50%{
+     width: 15%;
+    height: 15%;
+        background-color:rgb(88, 9, 53);
+  }
+  100%{
+     width: 25%;
+    height: 25%;
+        background-color:lightcoral;
+  }
+}
+
+
+@keyframes boodycolor {
+    0%{
+     
+        background-color:aqua;
+  }
+  50%{
+   
+        background-color:rgb(229, 147, 192);
+  }
+  100%{
+  
+        background-color:aqua;
+  }
+}
