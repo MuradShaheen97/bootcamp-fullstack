@@ -59,12 +59,12 @@ const user1 = new User(
   "Murad",
   "Shaheen",
   "Ramallah",
-  0591234567,
+  591234567,
 );
 
-// ===============================
+
 // READ DATA
-// ===============================
+
 console.log("=== BEFORE UPDATE ===");
 
 console.log("First Name:", user1.getFirstName());
@@ -72,9 +72,9 @@ console.log("Last Name:", user1.getLastName());
 console.log("Address:", user1.getAddress());
 console.log("Phone:", user1.getPhoneNumber());
 
-// ===============================
+
 // UPDATE DATA
-// ===============================
+
 console.log("\n=== TRY UPDATE ===");
 
 user1.setLastName("david"); // works
