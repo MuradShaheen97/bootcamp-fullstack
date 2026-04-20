@@ -1,0 +1,25 @@
+{
+  "name": "bootcamp-fullstack",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/muraddavid97-eng/bootcamp-fullstack.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/muraddavid97-eng/bootcamp-fullstack/issues"
+  },
+  "homepage": "https://github.com/muraddavid97-eng/bootcamp-fullstack#readme",
+  "dependencies": {
+    "ts-node": "^10.9.2",
+    "typescript": "^6.0.3"
+  }
+}
