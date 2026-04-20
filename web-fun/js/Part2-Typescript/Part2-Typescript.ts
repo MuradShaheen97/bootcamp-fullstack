@@ -16,4 +16,5 @@ printProgress(student1);
 
 // This will give an error
 // printProgress({ name: 'Bob' });
+
 printProgress({ name: 'Bob', percentage: 60 });

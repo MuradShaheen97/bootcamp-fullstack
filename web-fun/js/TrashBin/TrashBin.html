@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Drag and Drop Trash Bin</title>
+        <link rel="stylesheet" href="./TrashBin.css" />
+    </head>
+    <body>
+        <div class="container">
+            <h1>Trash Bin</h1>
+            <p>Drag the items below into the trash bin to delete them.</p>
+
+            <div class="items">
+                <div class="item" id="item1" draggable="true">📄</div>
+                <div class="item" id="item2" draggable="true">📁</div>
+                <div class="item" id="item3" draggable="true">🖼️</div>
+            </div>
+
+            <div class="trash-bin" id="trashBin">
+                <span>🗑️</span>
+            </div>
+        </div>
+
+        <script src="./TrashBin.js"></script>
+    </body>
+</html>
