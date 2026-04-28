@@ -1,0 +1,18 @@
+create schema resturant;
+use resturant;
+CREATE TABLE restaurants (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    restaurantName VARCHAR(100)
+);
+
+INSERT INTO restaurants (restaurantName)
+VALUES ('KFC'), ('Pizza Hut'), ('McDonalds');
+
+SELECT * FROM restaurants;
+
+UPDATE restaurants
+SET restaurantName = 'Burger King'
+WHERE id = 1;
+
+DELETE FROM restaurants
+WHERE id = 2;

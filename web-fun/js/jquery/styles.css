@@ -1,0 +1,16 @@
+
+
+
+.mainbtn , .mainbtn2{
+    background-color: rgb(12, 176, 230);
+    border: 1px solid black;
+    color: yellow;
+    padding: 10px;
+    margin: 10px;
+    width: 130px;
+    height: 50px;
+    border-radius: 50px;
+}
+body{
+    background: red;
+}

@@ -23,7 +23,7 @@ var pizza2 = pizzaOven(
   ["mozzarella", "feta"],
   ["mushrooms", "olives", "onions"],
 );
-console.log(pizza2;
+console.log(pizza2);
 
 // 3
 var pizza3 = pizzaOven(
