@@ -1,0 +1,14 @@
+This assignment helped me understand how loops really work in Python.
+
+I practiced using for loops with range, and learned how to control the start, end, and step.
+
+The tasks were simple but important:
+ printing numbers
+ working with multiples
+ using conditions inside loops
+ summing values
+ and making flexible logic using variables
+
+At the beginning it felt basic, but I realized it's the foundation for everything later.
+
+Now I feel more comfortable thinking step by step when solving problems.
