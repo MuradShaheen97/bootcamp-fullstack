@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+.background {
+    background-image: url("./content/yoga-header.jpg");
+    width: 100%;
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+    margin: auto;
+}
+
+header {
+    width: 100%;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 45px;
+    border-bottom: 2px solid white;
+}
+
+.body {
+    width: 80%;
+    justify-content: center;
+    align-content: center;
+
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    justify-content: space-between;
+}
+
+nav a {
+    color: white;
+    font-weight: bold;
+    text-decoration: underline;
+    border-right: 2px solid white;
+    padding-right: 10px;
+}
+
+.search-box {
+    display: flex;
+    align-items: center;
+}
+
+.search-box input {
+    height: 28px;
+    padding: 5px;
+    border: none;
+}
+
+.hero {
+    height: 420px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.hero-content h1 {
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+
+.hero-content p {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+#joinBtn {
+    background-color: #fa6057;
+    color: white;
+    border: 3px solid black;
+    padding: 20px 35px;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.classes {
+    background: white;
+    text-align: center;
+    padding: 30px 50px 70px;
+}
+
+.classes h2 {
+    font-size: 35px;
+    font: 2em sans-serif;
+    margin-bottom: 20px;
+}
+
+.classes>p {
+    font-size: 17px;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+}
+
+.card {
+    width: 250px;
+}
+
+.circle {
+    width: 150px;
+    height: 150px;
+    border: 3px solid black;
+    border-radius: 50%;
+    margin: 0 auto 15px;
+}
+
+.lastlink {
+    border: none;
+}
+
+.card h3 {
+    font-size: 22px;
+    margin-bottom: 8px;
+}
+
+.card p {
+    font-size: 16px;
+}
+
+footer {
+    background-color: #d83400;
+    padding: 35px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+}
+
+footer a {
+    color: #038ef1;
+}
+
+.social {
+    display: flex;
+    gap: 12px;
+    font-weight: bold;
+    font-size: 20px;
+}

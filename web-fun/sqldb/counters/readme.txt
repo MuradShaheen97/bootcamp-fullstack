@@ -3,7 +3,7 @@
 # 🌍 MySQL Countries Queries Project
 
 ## 📌 Overview
-
+/
 This project is part of my **Web Fundamentals journey at AXSOS Academy**, where I practiced writing SQL queries using the **World Database**.
 
 The goal was to understand how to:
