@@ -31,8 +31,6 @@ def values_greater_than_second(lst):
 
     print(len(result))
     return result
-
-
 # 5. This Length, That Value
 def length_and_value(size, value):
     result = []
