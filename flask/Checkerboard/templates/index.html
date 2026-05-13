@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Checkerboard</title>
+        <link rel="stylesheet"
+            href="{{ url_for('static', filename='style.css') }}">
+    </head>
+    <body>
+        <h1>Checkerboard</h1>
+        <div class="board"
+            style="grid-template-columns: repeat({{ cols }}, 60px);">
+            {% for row in range(rows) %}
+            {% for col in range(cols) %}
+            <div
+                class="box"
+                style="background-color: {% if (row + col) % 2 == 0 %}{{ color1 }}{% else %}{{ color2 }}{% endif %};">
+            </div>
+            {% endfor %}
+            {% endfor %}
+        </div>
+
+    </body>
+</html>

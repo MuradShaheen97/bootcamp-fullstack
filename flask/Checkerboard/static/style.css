@@ -1,0 +1,19 @@
+body {
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    margin: 30px;
+}
+
+.board {
+    display: grid;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.box {
+    width: 60px;
+    height: 60px;
+}
