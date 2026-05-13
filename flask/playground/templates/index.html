@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body
+        style="min-height: 100vh;display: flex; flex-direction: column;justify-content: center;align-items: center;">
+        <h1>welcome!</h1>
+        <!-- <section
+            style="display: flex; flex-wrap: wrap; max-width: 45em; gap: 2em;">
+            <div style="width: 100px; border-radius: 25%;
+            height: 100px; background-color: aqua; border: 2px solid black; "></div>
+            <div style="width: 100px; border-radius: 25%;
+            height: 100px; background-color: aqua; border: 2px solid black; "></div>
+            <div style="width: 100px;
+            height: 100px; background-color: aqua; border: 2px solid black;border-radius: 25%; "></div>
+        </section> -->
+        <section
+            style="display: flex; flex-wrap: wrap; max-width: 45em; gap: 2em;">
+            {% for i in range(1,x,1) %}
+            <div style="width: 100px; border-radius: 25%;
+            height: 100px; background-color: {{ colors }}; border: 2px solid black; "></div>
+            {% endfor %}
+        </section>
+    </body>
+</html>
