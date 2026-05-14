@@ -1,0 +1,32 @@
+body{
+    font-family: Arial, sans-serif;
+    background-color: whitesmoke;
+}
+
+.container{
+    width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 2px solid rgb(9, 200, 238);
+    background-color: white;
+    border-radius: 25px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+input,
+select,
+textarea{
+    margin-bottom: 15px;
+    padding: 10px;
+}
+
+button{
+    padding: 10px;
+    background-color: rgb(33, 226, 240);
+    color: rgb(0, 0, 0);
+    border: none;
+}

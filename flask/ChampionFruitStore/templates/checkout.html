@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Checkout</title>
+
+        <link rel="stylesheet"
+            href="{{ url_for('static', filename='style.css') }}">
+    </head>
+    <body>
+
+        <div class="container">
+
+            <h1>Thank You For Your Order!</h1>
+
+            <p>We ordered {{ total }} fruits for you on {{ time }}</p>
+
+            <table>
+
+                <tr>
+                    <th>Fruit Name</th>
+                    <th>Quantity</th>
+                </tr>
+
+                <tr>
+                    <td>Strawberry</td>
+                    <td>{{ strawberries }}</td>
+                </tr>
+
+                <tr>
+                    <td>Raspberry</td>
+                    <td>{{ raspberries }}</td>
+                </tr>
+
+                <tr>
+                    <td>Apple</td>
+                    <td>{{ apples }}</td>
+                </tr>
+
+            </table>
+
+            <h3>Your Information</h3>
+
+            <p>Name: {{ name }}</p>
+            <p>Student ID: {{ student_id }}</p>
+
+        </div>
+
+    </body>
+</html>

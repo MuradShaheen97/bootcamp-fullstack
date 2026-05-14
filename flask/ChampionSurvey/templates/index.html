@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Champion Survey</title>
+
+        <link rel="stylesheet"
+            href="{{ url_for('static', filename='style.css') }}">
+    </head>
+    <body>
+
+        <div class="container">
+
+            <h1>Champion Survey</h1>
+
+            <form action="/result" method="POST">
+
+                <label>Your Name:</label>
+                <input type="text" name="name">
+
+                <label>Dojo Location:</label>
+                <select name="location">
+                    <option>Ramallah</option>
+                    <option>Nablus</option>
+                    <option>Jerusalem</option>
+                </select>
+
+                <label>Favorite Language:</label>
+                <select name="language">
+                    <option>Python</option>
+                    <option>JavaScript</option>
+                    <option>Java</option>
+                </select>
+
+                <label>Comment:</label>
+                <textarea name="comment"></textarea>
+
+                <button type="submit">Submit</button>
+
+            </form>
+
+        </div>
+
+    </body>
+</html>

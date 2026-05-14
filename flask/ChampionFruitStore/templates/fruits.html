@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Champion Fruit Store</title>
+
+        <link rel="stylesheet"
+            href="{{ url_for('static', filename='style.css') }}">
+    </head>
+    <body>
+
+        <div class="container">
+
+            <h1>Champion Fruit Store</h1>
+
+            <form action="/checkout" method="POST">
+
+                <div class="fruit">
+
+                    <img
+                        src="{{ url_for('static', filename='images/strawberry.png') }}"
+                        alt="strawberry">
+
+                    <label>Strawberry</label>
+
+                    <input type="number" name="strawberry" value="0">
+
+                </div>
+
+                <div class="fruit">
+
+                    <img
+                        src="{{ url_for('static', filename='images/raspberry.png') }}"
+                        alt="raspberry">
+
+                    <label>Raspberry</label>
+
+                    <input type="number" name="raspberry" value="0">
+
+                </div>
+
+                <div class="fruit">
+
+                    <img
+                        src="{{ url_for('static', filename='images/apple.png') }}"
+                        alt="apple">
+
+                    <label>Apple</label>
+
+                    <input type="number" name="apple" value="0">
+
+                </div>
+
+                <h3>Your Information</h3>
+
+                <input type="text" name="name" placeholder="Your Name">
+
+                <input type="text" name="student_id" placeholder="Student ID">
+
+                <button type="submit">Buy Fruits</button>
+
+            </form>
+
+        </div>
+
+    </body>
+</html>
