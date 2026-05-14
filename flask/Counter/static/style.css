@@ -1,0 +1,51 @@
+body{
+    font-family: Arial, sans-serif;
+    background-color: rgb(222, 99, 99);
+}
+
+.container{
+    width: 400px;
+    margin: 100px auto;
+    text-align: center;
+    padding: 30px;
+    background-color: rgb(215, 241, 16);
+    border: 2px solid rgb(221, 17, 136);
+    border-radius: 25px;
+}
+
+h1{
+    font-size: 40px;
+}
+
+h2{
+    font-size: 60px;
+}
+
+.buttons{
+    margin: 20px;
+    border-radius: 20px;
+}
+
+a{
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 20px;
+}
+
+form{
+    margin-top: 20px;
+}
+
+input{
+    padding: 10px;
+}
+
+button{
+    padding: 10px 20px;
+    border-radius: 25px;
+    color: rgb(5, 9, 9);
+    background-color: aqua;
+}
