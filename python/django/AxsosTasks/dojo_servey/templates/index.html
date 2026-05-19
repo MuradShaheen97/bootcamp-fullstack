@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Dojo Survey</title>
+    </head>
+    <body>
+
+        <h1>Dojo Survey</h1>
+
+        <form action="/result" method="POST">
+            {% csrf_token %}
+
+            <p>
+                Your Name:
+                <input type="text" name="name">
+            </p>
+
+            <p>
+                Dojo Location:
+                <select name="location">
+                    <option>Ramallah</option>
+                    <option>Nablus</option>
+                    <option>Jerusalem</option>
+                    <option>San Jose</option>
+                </select>
+            </p>
+
+            <p>
+                Favorite Language:
+                <select name="language">
+                    <option>Python</option>
+                    <option>JavaScript</option>
+                    <option>Java</option>
+                    <option>C#</option>
+                </select>
+            </p>
+
+            <p>
+                Comment:
+                <textarea name="comment"></textarea>
+            </p>
+
+            <button type="submit">Submit</button>
+        </form>
+
+    </body>
+</html>
