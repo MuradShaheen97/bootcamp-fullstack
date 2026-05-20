@@ -1,3 +1,9 @@
+## screenshots for page
+
+![screenshot](img/counter.png)
+
+---
+
 # Counter App
 
 Simple Django app that counts how many times the user visits the page using sessions.

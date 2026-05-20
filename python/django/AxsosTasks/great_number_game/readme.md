@@ -1,3 +1,9 @@
+## screenshots for page
+
+![screenshot](img/num.png)
+
+---
+
 # Great Number Game
 
 Simple Django guessing game using sessions.

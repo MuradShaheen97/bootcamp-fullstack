@@ -1,3 +1,9 @@
+## screenshots for page
+
+![screenshot](img/gold.png)
+
+---
+
 # Ninja Gold
 
 This is a simple Django game where the player earns or loses gold by choosing different places.
