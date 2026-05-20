@@ -25,5 +25,6 @@ urlpatterns = [
     path('multiple_apps/', include('multiple_apps.urls')),
     path('users/', include('users.urls')),
     path('surveys/', include('surveys.urls')),
+    path('ninja_gold/', include('ninja_gold.urls')),
 ]
 
