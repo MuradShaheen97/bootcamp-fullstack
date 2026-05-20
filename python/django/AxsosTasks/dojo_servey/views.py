@@ -10,7 +10,7 @@ def index(request):
 from django.shortcuts import render, redirect
 
 def index(request):
-    return render(request, "index.html")
+    return render(request, "dojo/index.html")
 
 def result(request):
     if request.method == "POST":

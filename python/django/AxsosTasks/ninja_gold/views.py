@@ -9,7 +9,7 @@ def index(request):
     if 'activities' not in request.session:
         request.session['activities'] = []
 
-    return render(request, 'index.html')
+    return render(request, 'gold/index.html')
 
 
 def process_money(request):

@@ -31,8 +31,9 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
-    'counter',
+    'great_number_game',
     'ninja_gold',
+    'counter',
     'multiple_apps',
     'surveys',
     'users',

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Great Number Game</title>
+
+        <style>
+
+        body{
+            text-align: center;
+            font-family: Arial;
+            margin-top: 50px;
+        }
+
+        .box{
+            width: 250px;
+            height: 250px;
+            margin: 20px auto;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 30px;
+        }
+
+        .red{
+            background-color: red;
+        }
+
+        .green{
+            background-color: green;
+        }
+
+        button{
+            padding: 10px 20px;
+            margin-top: 10px;
+        }
+
+    </style>
+
+    </head>
+    <body>
+
+        <h1>Welcome to the Great Number Game!</h1>
+
+        <p>I am thinking of a number between 1 and 100</p>
+
+        <p>Take a guess!</p>
+
+        {% if request.session.result %}
+
+        <div class="box {{ request.session.color }}">
+            <div>
+
+                <h2>{{ request.session.result }}</h2>
+
+                {% if request.session.color == 'green' %}
+
+                <a href="/great_number_game/reset">
+                    <button>Play Again</button>
+                </a>
+
+                {% endif %}
+
+            </div>
+        </div>
+
+        {% endif %}
+
+        <form action="/great_number_game/guess" method="POST">
+
+            {% csrf_token %}
+
+            <input type="number" name="guess">
+
+            <br>
+
+            <button>Submit</button>
+
+        </form>
+
+    </body>
+</html>

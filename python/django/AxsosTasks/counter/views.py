@@ -7,7 +7,7 @@ def index(request):
 
     request.session['count'] += 1
 
-    return render(request, 'index.html')
+    return render(request, 'counter/index.html')
 
 
 def destroy(request):
