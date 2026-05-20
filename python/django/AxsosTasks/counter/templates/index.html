@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Counter</title>
+
+        <style>
+        body{
+            text-align: center;
+            margin-top: 100px;
+            font-family: Arial;
+        }
+
+        button{
+            padding: 10px 20px;
+            margin-top: 20px;
+        }
+    </style>
+
+    </head>
+    <body>
+
+        <h1>Counter</h1>
+
+        <h2>{{ request.session.count }} times</h2>
+
+        <a href="/counter/destroy_session">
+            <button>Reset</button>
+        </a>
+
+    </body>
+</html>

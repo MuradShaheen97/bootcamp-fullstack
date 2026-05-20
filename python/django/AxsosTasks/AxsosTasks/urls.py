@@ -26,5 +26,6 @@ urlpatterns = [
     path('users/', include('users.urls')),
     path('surveys/', include('surveys.urls')),
     path('ninja_gold/', include('ninja_gold.urls')),
+    path('counter/', include('counter.urls')),
 ]
 
