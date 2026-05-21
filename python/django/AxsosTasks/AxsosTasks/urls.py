@@ -28,6 +28,7 @@ urlpatterns = [
     path('ninja_gold/', include('ninja_gold.urls')),
     path('counter/', include('counter.urls')),
     path('great_number_game/', include('great_number_game.urls')),
+    path('users_shell/', include('users_shell.urls')),
     
 ]
 

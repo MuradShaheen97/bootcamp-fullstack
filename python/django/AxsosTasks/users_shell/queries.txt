@@ -1,0 +1,6 @@
+from users_app.models import User
+
+
+User.objects.create(first_name="Murad", last_name="Shaheen", email_address="murad@gmail.com", age=28)
+User.objects.create(first_name="aws", last_name="Ali", email_address="ahmad@gmail.com", age=25)
+User.objects.create(first_name="Sara", last_name="Khaled", email_address="sara@gmail.com", age=22)
