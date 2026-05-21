@@ -31,6 +31,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'Users_with_Templates',
     'users_shell',
     'great_number_game',
     'ninja_gold',

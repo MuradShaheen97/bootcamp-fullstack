@@ -29,6 +29,7 @@ urlpatterns = [
     path('counter/', include('counter.urls')),
     path('great_number_game/', include('great_number_game.urls')),
     path('users_shell/', include('users_shell.urls')),
+    path('Users_with_Templates/', include('Users_with_Templates.urls')),
     
 ]
 

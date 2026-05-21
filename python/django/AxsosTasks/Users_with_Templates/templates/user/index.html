@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Users</title>
+    </head>
+    <body>
+
+        <h1>All the Users</h1>
+
+        <table border="1">
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Age</th>
+            </tr>
+
+            {% for user in users %}
+            <tr>
+                <td>{{ user.id }}</td>
+                <td>{{ user.first_name }} {{ user.last_name }}</td>
+                <td>{{ user.email }}</td>
+                <td>{{ user.age }}</td>
+            </tr>
+            {% endfor %}
+        </table>
+
+        <hr>
+
+        <h2>Add a User</h2>
+
+        <form action="/Users_with_Templates/create_user/" method="POST">
+            {% csrf_token %}
+
+            <p>First Name: <input type="text" name="first_name"></p>
+            <p>Last Name: <input type="text" name="last_name"></p>
+            <p>Email: <input type="email" name="email"></p>
+            <p>Age: <input type="number" name="age"></p>
+
+            <button type="submit">Add</button>
+        </form>
+
+    </body>
+</html>
