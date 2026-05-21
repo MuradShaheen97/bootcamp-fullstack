@@ -1,0 +1,141 @@
+# Import the models from our app
+# This allows us to use Dojo and Ninja inside the Django shell
+from dojo_ninjas_app.models import Dojo, Ninja
+
+
+# =========================
+# Create 3 Dojos
+# =========================
+
+# Create the first dojo and save it in variable dojo1
+dojo1 = Dojo.objects.create(
+    name="First Dojo",
+    city="Ramallah",
+    state="PS"
+)
+
+# Create the second dojo
+dojo2 = Dojo.objects.create(
+    name="Second Dojo",
+    city="Nablus",
+    state="PS"
+)
+
+# Create the third dojo
+dojo3 = Dojo.objects.create(
+    name="Third Dojo",
+    city="Hebron",
+    state="PS"
+)
+
+
+# =========================
+# Create 3 Ninjas for dojo1
+# =========================
+
+# Create ninja connected to dojo1
+Ninja.objects.create(
+    first_name="Murad",
+    last_name="Shaheen",
+    dojo=dojo1
+)
+
+# Create another ninja connected to dojo1
+Ninja.objects.create(
+    first_name="Ahmad",
+    last_name="Ali",
+    dojo=dojo1
+)
+
+# Create another ninja connected to dojo1
+Ninja.objects.create(
+    first_name="Omar",
+    last_name="Saleh",
+    dojo=dojo1
+)
+
+
+# =========================
+# Create 3 Ninjas for dojo2
+# =========================
+
+Ninja.objects.create(
+    first_name="Lina",
+    last_name="Khaled",
+    dojo=dojo2
+)
+
+Ninja.objects.create(
+    first_name="Sara",
+    last_name="Nasser",
+    dojo=dojo2
+)
+
+Ninja.objects.create(
+    first_name="Noor",
+    last_name="Hassan",
+    dojo=dojo2
+)
+
+
+# =========================
+# Create 3 Ninjas for dojo3
+# =========================
+
+Ninja.objects.create(
+    first_name="Adam",
+    last_name="Zaid",
+    dojo=dojo3
+)
+
+Ninja.objects.create(
+    first_name="Yazan",
+    last_name="Sami",
+    dojo=dojo3
+)
+
+Ninja.objects.create(
+    first_name="Tareq",
+    last_name="Amer",
+    dojo=dojo3
+)
+
+
+# =========================
+# Retrieve all ninjas from the first dojo
+# =========================
+
+# .first() gets the first dojo in database
+# .ninjas.all() gets all ninjas connected to that dojo
+Dojo.objects.first().ninjas.all()
+
+
+# =========================
+# Retrieve all ninjas from the last dojo
+# =========================
+
+# .last() gets the last dojo in database
+# .ninjas.all() gets all ninjas connected to that dojo
+Dojo.objects.last().ninjas.all()
+
+
+# =========================
+# Retrieve the last ninja's dojo
+# =========================
+
+# Get the last ninja
+# Then access the dojo connected to that ninja
+Ninja.objects.last().dojo
+
+
+# =========================
+# Create a new dojo with desc field
+# =========================
+
+# Create another dojo and add description
+Dojo.objects.create(
+    name="New Dojo",
+    city="Bethlehem",
+    state="PS",
+    desc="new dojo"
+)
