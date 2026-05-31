@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Authors</title>
+    </head>
+    <body>
+
+        <h1>Add Author</h1>
+
+        <form action="/library/authors/create/" method="POST">
+            {% csrf_token %}
+
+            <p>First Name</p>
+            <input type="text" name="first_name">
+
+            <p>Last Name</p>
+            <input type="text" name="last_name">
+
+            <p>Notes</p>
+            <textarea name="notes"></textarea>
+
+            <br><br>
+
+            <button type="submit">
+                Add
+            </button>
+
+        </form>
+
+        <hr>
+
+        <h1>All Authors</h1>
+
+        <table border="1">
+
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Action</th>
+            </tr>
+
+            {% for author in authors %}
+            <tr>
+
+                <td>{{ author.id }}</td>
+
+                <td>
+                    {{ author.first_name }}
+                    {{ author.last_name }}
+                </td>
+
+                <td>
+                    <a href="/library/authors/{{ author.id }}/">
+                        View
+                    </a>
+                </td>
+
+            </tr>
+            {% endfor %}
+
+        </table>
+
+        <br>
+
+        <a href="/library/books/">
+            Go To Books
+        </a>
+
+    </body>
+</html>
