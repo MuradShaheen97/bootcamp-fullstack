@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Sports Leagues</title>
+	</head>
+	<body>
+		<h1>Sports ORM I</h1>
+
+		<h2>1. All Baseball Leagues</h2>
+		{% for league in baseball_leagues %}
+		<p>{{ league.name }} - {{ league.sport }}</p>
+		{% endfor %}
+
+		<h2>2. All Women's Leagues</h2>
+		{% for league in women_leagues %}
+		<p>{{ league.name }}</p>
+		{% endfor %}
+
+		<h2>3. All Hockey Leagues</h2>
+		{% for league in hockey_leagues %}
+		<p>{{ league.name }} - {{ league.sport }}</p>
+		{% endfor %}
+
+		<h2>4. All Leagues Other Than Football</h2>
+		{% for league in not_football_leagues %}
+		<p>{{ league.name }} - {{ league.sport }}</p>
+		{% endfor %}
+
+		<h2>5. All Conference Leagues</h2>
+		{% for league in conference_leagues %}
+		<p>{{ league.name }}</p>
+		{% endfor %}
+
+		<h2>6. All Atlantic Leagues</h2>
+		{% for league in atlantic_leagues %}
+		<p>{{ league.name }}</p>
+		{% endfor %}
+
+		<h2>7. All Teams Based in Dallas</h2>
+		{% for team in dallas_teams %}
+		<p>{{ team.location }} {{ team.team_name }}</p>
+		{% endfor %}
+
+		<h2>8. All Teams Named Raptors</h2>
+		{% for team in raptors_teams %}
+		<p>{{ team.location }} {{ team.team_name }}</p>
+		{% endfor %}
+
+		<h2>9. All Teams Whose Location Includes City</h2>
+		{% for team in city_teams %}
+		<p>{{ team.location }} {{ team.team_name }}</p>
+		{% endfor %}
+
+		<h2>10. All Teams Whose Names Begin With T</h2>
+		{% for team in t_teams %}
+		<p>{{ team.location }} {{ team.team_name }}</p>
+		{% endfor %}
+
+		<h2>11. Teams Ordered Alphabetically By Location</h2>
+		{% for team in teams_by_location %}
+		<p>{{ team.location }} {{ team.team_name }}</p>
+		{% endfor %}
+
+		<h2>12. Teams Ordered By Team Name Reverse Alphabetical</h2>
+		{% for team in teams_by_name_reverse %}
+		<p>{{ team.location }} {{ team.team_name }}</p>
+		{% endfor %}
+
+		<h2>13. Players With Last Name Cooper</h2>
+		{% for player in cooper_players %}
+		<p>{{ player.first_name }} {{ player.last_name }}</p>
+		{% endfor %}
+
+		<h2>14. Players With First Name Joshua</h2>
+		{% for player in joshua_players %}
+		<p>{{ player.first_name }} {{ player.last_name }}</p>
+		{% endfor %}
+
+		<h2>15. Cooper Players Except Joshua</h2>
+		{% for player in cooper_not_joshua %}
+		<p>{{ player.first_name }} {{ player.last_name }}</p>
+		{% endfor %}
+
+		<h2>16. Players Named Alexander Or Wyatt</h2>
+		{% for player in alexander_or_wyatt %}
+		<p>{{ player.first_name }} {{ player.last_name }}</p>
+		{% endfor %}
+	</body>
+</html>
