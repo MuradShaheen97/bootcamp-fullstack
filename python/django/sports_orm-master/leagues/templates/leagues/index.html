@@ -1,89 +1,88 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Sports Leagues</title>
+		<title>Sports ORM II</title>
 	</head>
 	<body>
-		<h1>Sports ORM I</h1>
+		<h1>Sports ORM II</h1>
 
-		<h2>1. All Baseball Leagues</h2>
-		{% for league in baseball_leagues %}
-		<p>{{ league.name }} - {{ league.sport }}</p>
+		<h2>1. All teams in the Atlantic Soccer Conference</h2>
+		{% for team in q1 %}
+		<p>{{ team.location }} {{ team.team_name }}</p>
 		{% endfor %}
 
-		<h2>2. All Women's Leagues</h2>
-		{% for league in women_leagues %}
+		<h2>2. All current players on the Boston Penguins</h2>
+		{% for player in q2 %}
+		<p>{{ player.first_name }} {{ player.last_name }}</p>
+		{% endfor %}
+
+		<h2>3. All current players in the International Collegiate Baseball
+			Conference</h2>
+		{% for player in q3 %}
+		<p>{{ player.first_name }} {{ player.last_name }}</p>
+		{% endfor %}
+
+		<h2>4. All current players in American Conference of Amateur Football with
+			last name Lopez</h2>
+		{% for player in q4 %}
+		<p>{{ player.first_name }} {{ player.last_name }}</p>
+		{% endfor %}
+
+		<h2>5. All football players</h2>
+		{% for player in q5 %}
+		<p>{{ player.first_name }} {{ player.last_name }}</p>
+		{% endfor %}
+
+		<h2>6. All teams with a current player named Sophia</h2>
+		{% for team in q6 %}
+		<p>{{ team.location }} {{ team.team_name }}</p>
+		{% endfor %}
+
+		<h2>7. All leagues with a current player named Sophia</h2>
+		{% for league in q7 %}
 		<p>{{ league.name }}</p>
 		{% endfor %}
 
-		<h2>3. All Hockey Leagues</h2>
-		{% for league in hockey_leagues %}
-		<p>{{ league.name }} - {{ league.sport }}</p>
-		{% endfor %}
-
-		<h2>4. All Leagues Other Than Football</h2>
-		{% for league in not_football_leagues %}
-		<p>{{ league.name }} - {{ league.sport }}</p>
-		{% endfor %}
-
-		<h2>5. All Conference Leagues</h2>
-		{% for league in conference_leagues %}
-		<p>{{ league.name }}</p>
-		{% endfor %}
-
-		<h2>6. All Atlantic Leagues</h2>
-		{% for league in atlantic_leagues %}
-		<p>{{ league.name }}</p>
-		{% endfor %}
-
-		<h2>7. All Teams Based in Dallas</h2>
-		{% for team in dallas_teams %}
-		<p>{{ team.location }} {{ team.team_name }}</p>
-		{% endfor %}
-
-		<h2>8. All Teams Named Raptors</h2>
-		{% for team in raptors_teams %}
-		<p>{{ team.location }} {{ team.team_name }}</p>
-		{% endfor %}
-
-		<h2>9. All Teams Whose Location Includes City</h2>
-		{% for team in city_teams %}
-		<p>{{ team.location }} {{ team.team_name }}</p>
-		{% endfor %}
-
-		<h2>10. All Teams Whose Names Begin With T</h2>
-		{% for team in t_teams %}
-		<p>{{ team.location }} {{ team.team_name }}</p>
-		{% endfor %}
-
-		<h2>11. Teams Ordered Alphabetically By Location</h2>
-		{% for team in teams_by_location %}
-		<p>{{ team.location }} {{ team.team_name }}</p>
-		{% endfor %}
-
-		<h2>12. Teams Ordered By Team Name Reverse Alphabetical</h2>
-		{% for team in teams_by_name_reverse %}
-		<p>{{ team.location }} {{ team.team_name }}</p>
-		{% endfor %}
-
-		<h2>13. Players With Last Name Cooper</h2>
-		{% for player in cooper_players %}
+		<h2>8. Everyone with last name Flores who does not currently play for
+			Washington Roughriders</h2>
+		{% for player in q8 %}
 		<p>{{ player.first_name }} {{ player.last_name }}</p>
 		{% endfor %}
 
-		<h2>14. Players With First Name Joshua</h2>
-		{% for player in joshua_players %}
+		<h2>9. All teams Samuel Evans has played with</h2>
+		{% for team in q9 %}
+		<p>{{ team.location }} {{ team.team_name }}</p>
+		{% endfor %}
+
+		<h2>10. All players who have played with the Manitoba Tiger-Cats</h2>
+		{% for player in q10 %}
 		<p>{{ player.first_name }} {{ player.last_name }}</p>
 		{% endfor %}
 
-		<h2>15. Cooper Players Except Joshua</h2>
-		{% for player in cooper_not_joshua %}
+		<h2>11. Players formerly with Wichita Vikings but not currently</h2>
+		{% for player in q11 %}
 		<p>{{ player.first_name }} {{ player.last_name }}</p>
 		{% endfor %}
 
-		<h2>16. Players Named Alexander Or Wyatt</h2>
-		{% for player in alexander_or_wyatt %}
+		<h2>12. Every team Jacob Gray played for before Oregon Colts</h2>
+		{% for team in q12 %}
+		<p>{{ team.location }} {{ team.team_name }}</p>
+		{% endfor %}
+
+		<h2>13. Everyone named Joshua who played in Atlantic Federation of Amateur
+			Baseball Players</h2>
+		{% for player in q13 %}
 		<p>{{ player.first_name }} {{ player.last_name }}</p>
+		{% endfor %}
+
+		<h2>14. All teams that have had 12 or more players</h2>
+		{% for team in q14 %}
+		<p>{{ team.location }} {{ team.team_name }} - {{ team.num_players }}</p>
+		{% endfor %}
+
+		<h2>15. All players and count of teams played for</h2>
+		{% for player in q15 %}
+		<p>{{ player.first_name }} {{ player.last_name }} - {{ player.num_teams }}</p>
 		{% endfor %}
 	</body>
 </html>
