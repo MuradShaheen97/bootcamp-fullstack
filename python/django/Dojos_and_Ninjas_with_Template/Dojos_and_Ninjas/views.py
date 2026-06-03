@@ -15,9 +15,8 @@ def addDojos (request):
     if request.method == 'POST':
         dojoname = request.POST.get('name')
         dojocity = request.POST.get('city')
-        dojo_id = request.POST.get('dojo')
-        dojo = Dojo.objects.get(id=dojo_id)
-    addTo_dojo(dojoname,dojocity,dojo)
+        dojostate = request.POST.get('state')
+        addTo_dojo(dojoname,dojocity,dojostate)
     return redirect('Dojos_and_Ninjas:index')
 
 
