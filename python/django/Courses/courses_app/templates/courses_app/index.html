@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Courses</title>
+    </head>
+    <body>
+
+        <h1>Add a new course</h1>
+
+        <!-- Display validation errors -->
+        {% if messages %}
+        {% for message in messages %}
+        <p style="color: red;">{{ message }}</p>
+        {% endfor %}
+        {% endif %}
+
+        <!-- Add course form -->
+        <form action="{% url 'courses_app:create_course' %}" method="POST">
+            {% csrf_token %}
+
+            <p>Name:</p>
+            <input type="text" name="name">
+
+            <p>Description:</p>
+            <textarea name="description"></textarea>
+
+            <br><br>
+
+            <button type="submit">Add</button>
+        </form>
+
+        <hr>
+
+        <h2>Courses</h2>
+
+        <!-- Courses table -->
+        <table border="1">
+            <tr>
+                <th>Course Name</th>
+                <th>Description</th>
+                <th>Date Added</th>
+                <th>Actions</th>
+            </tr>
+
+            {% for course in courses %}
+            <tr>
+                <td>{{ course.name }}</td>
+                <td>{{ course.description }}</td>
+                <td>{{ course.created_at }}</td>
+                <td>
+                    <a
+                        href="{% url 'courses_app:delete_page' course.id %}">remove</a>
+                </td>
+            </tr>
+            {% empty %}
+            <tr>
+                <td colspan="4">No courses yet.</td>
+            </tr>
+            {% endfor %}
+        </table>
+
+    </body>
+</html>

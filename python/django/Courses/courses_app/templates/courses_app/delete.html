@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Delete Course</title>
+    </head>
+    <body>
+
+        <h1>Are you sure you want to delete the following course?</h1>
+
+        <p><strong>Name:</strong> {{ course.name }}</p>
+        <p><strong>Description:</strong> {{ course.description }}</p>
+
+        <!-- No button: go back home -->
+        <a href="{% url 'courses_app:index' %}">
+            <button>No</button>
+        </a>
+
+        <!-- Yes button: delete course -->
+        <form action="{% url 'courses_app:destroy_course' course.id %}"
+            method="POST" style="display:inline;">
+            {% csrf_token %}
+            <button type="submit">Yes! I want to delete this</button>
+        </form>
+
+    </body>
+</html>
