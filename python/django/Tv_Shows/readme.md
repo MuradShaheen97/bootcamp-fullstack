@@ -1,7 +1,7 @@
-# 📺 TV Shows Management System (Django)
+# 📺 TV Shows Validated (Django)
 
-A simple and modern Django web application for managing TV shows.  
-Users can create, view, update, and delete TV shows with a clean UI built using TailwindCSS.
+A Django web application for managing TV shows with full CRUD functionality and server-side validation.
+Users can create, view, update, and delete TV shows while ensuring that all submitted data is validated before being saved to the database.
 
 ---
 
@@ -10,118 +10,159 @@ Users can create, view, update, and delete TV shows with a clean UI built using 
 ### 📺 TV Shows Module
 
 - ➕ Create new TV shows
-- 📄 View all TV shows in a structured table
+- 📄 View all TV shows
 - 👁 View detailed information for each show
 - ✏️ Edit existing TV shows
-- 🗑 Delete TV shows securely (POST requests)
+- 🗑 Delete TV shows securely using POST requests
+
+### ✅ Validation Features
+
+- Title must be at least 2 characters
+- Network must be at least 3 characters
+- Release Date is required
+- Release Date must be in the past
+- Description is optional
+- If Description is provided, it must be at least 10 characters
+- TV Show title must be unique
 
 ### 🎨 UI / UX
 
-- Modern dark-themed interface (Netflix-style vibes)
+- Modern dark-themed interface
 - Responsive design using TailwindCSS
-- Clean table layout for better readability
+- Validation error messages displayed directly on forms
 
 ---
 
 ## 🧠 Project Structure
 
+```text
 tv_show/
-├── models.py # TVShow model + helper functions
-├── views.py # Business logic (CRUD operations)
-├── urls.py # Application routes
+├── models.py
+├── views.py
+├── urls.py
 ├── templates/
-│ └── tv_show/
-│ ├── all_shows.html
-│ ├── create_new_show.html
-│ ├── edit_show.html
-│ └── show_tv_information.html
+│   └── tv_show/
+│       ├── all_shows.html
+│       ├── create_new_show.html
+│       ├── edit_show.html
+│       └── show_tv_information.html
+```
 
 ---
 
 ## 🗄️ Database Model
 
-### 📺 TVShow
+### TVShow
 
-- `title` → CharField (max 255)
-- `network` → CharField (max 255)
-- `release_date` → DateField
-- `description` → TextField
-- `created_at` → DateTime (auto-generated)
-- `updated_at` → DateTime (auto-updated)
-
----
-
-## 🔗 Relationships
-
-This project currently uses a **single model (TVShow)** with no relationships.
+| Field        | Type          |
+| ------------ | ------------- |
+| title        | CharField     |
+| network      | CharField     |
+| release_date | DateField     |
+| description  | TextField     |
+| created_at   | DateTimeField |
+| updated_at   | DateTimeField |
 
 ---
 
-## ⚙️ Installation & Setup
+## ⚙️ Installation
 
-### 1. Clone the repository
+### Create Virtual Environment
 
 ```bash
-git clone <repo-url>
-cd tv-shows-project
-2. Create virtual environment
 python -m venv env
+```
 
-Activate:
+### Activate Environment
 
-# Windows
+```bash
+source env/bin/activate
+```
 
-env\Scripts\activate
-3. Install dependencies
+### Install Django
+
+```bash
 pip install django
-4. Run migrations
+```
+
+### Run Migrations
+
+```bash
 python manage.py makemigrations
 python manage.py migrate
-5. Run server
+```
+
+### Start Server
+
+```bash
 python manage.py runserver
-6. Open in browser
-http://127.0.0.1:8000/tv_show/
-🌐 Main Routes
-Route    Method    Description
-/tv_show/    GET    Show all TV shows
-/tv_show/shows/new/    GET    Show create form
-/tv_show/shows/create/    POST    Create new TV show
-/tv_show/shows/<id>/    GET    View single TV show
-/tv_show/shows/<id>/edit/    GET    Edit TV show form
-/tv_show/shows/<id>/update/    POST    Update TV show
-/tv_show/shows/<id>/destroy/    POST    Delete TV show
-⚙️ Key Functionalities
-🧾 Full CRUD system (Create, Read, Update, Delete)
-📺 TV show detail management
-🧠 Clean separation between views and models
-🔐 Secure delete operation using POST method
-🎨 Modern UI using TailwindCSS
-🛠️ Tech Stack
-Python 3
-Django Framework
-SQLite Database
-HTML5
-TailwindCSS
-⚠️ Notes
-Field names in forms MUST match Django view keys exactly
-Always include {% csrf_token %} in POST forms
-URL names must match {% url %} usage in templates
-Template structure must follow templates/tv_show/ pattern
-Delete operations should always use POST requests for safety
-📷 Screenshots
+```
 
-Add screenshots here
+Open:
 
-![Home Page](C:\Users\zzeta\OneDrive\Pictures\Screenshots\Screenshot%202026-06-03%20161930.png)
-![Show Page](C:\Users\zzeta\OneDrive\Pictures\Screenshots\Screenshot%202026-06-03%20161940.png)
-![](C:/Users/zzeta/AppData/Roaming/marktext/images/2026-06-03-16-20-53-image.png)
+```text
+http://127.0.0.1:8000/
+```
 
-👨‍💻 Author
+---
 
-Built as a learning project to master:
+## 🌐 Routes
 
-Django CRUD operations
-Template rendering
-URL routing system
-Backend + frontend integration
-TailwindCSS UI design
+| Route                | Method | Description          |
+| -------------------- | ------ | -------------------- |
+| /                    | GET    | Display all TV shows |
+| /shows/new/          | GET    | Display create form  |
+| /shows/create/       | POST   | Create TV show       |
+| /shows/<id>/         | GET    | Display one TV show  |
+| /shows/<id>/edit/    | GET    | Display edit form    |
+| /shows/<id>/update/  | POST   | Update TV show       |
+| /shows/<id>/destroy/ | POST   | Delete TV show       |
+
+---
+
+## ⚙️ Validation Rules
+
+- Title ≥ 2 characters
+- Network ≥ 3 characters
+- Release Date is required
+- Release Date must be before today
+- Description is optional
+- Description ≥ 10 characters if provided
+- Title must be unique
+
+---
+
+## 🛠️ Technologies Used
+
+- Python 3
+- Django
+- SQLite3
+- HTML5
+- TailwindCSS
+
+---
+
+## 📷 Screenshots
+
+### All Shows
+
+![All Shows](img/all_shows.png)
+
+### Add New Show
+
+![Create Show](img/create_show.png)
+
+---
+
+## 👨‍💻 Author
+
+Murad Shaheen
+
+Built as part of the AXSOS Full Stack Development Program to practice:
+
+- Django CRUD Operations
+- Model Validations
+- URL Routing
+- Template Rendering
+- Form Handling
+- TailwindCSS UI Development
