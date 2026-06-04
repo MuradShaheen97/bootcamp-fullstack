@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Success</title>
+        <style>
+        body {
+            font-family: Arial;
+            padding: 40px;
+        }
+
+        .green {
+            color: green;
+        }
+    </style>
+    </head>
+    <body>
+
+        <a href="/logout">Log Out</a>
+
+        <h1>Success! Welcome, {{ user.first_name }}!</h1>
+
+        {% if messages %}
+        {% for message in messages %}
+        <p class="green">{{ message }}</p>
+        {% endfor %}
+        {% endif %}
+
+    </body>
+</html>
