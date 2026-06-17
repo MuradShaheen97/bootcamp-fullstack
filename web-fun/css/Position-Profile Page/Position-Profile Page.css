@@ -1,7 +1,6 @@
 * {
   box-sizing: border-box;
   font-family:sans-serif;
-  box-sizing: 0;
   font-weight:400;
 
 }
@@ -9,7 +8,6 @@
 body {
   margin: 0;
   background: #f3f3f3;
-  min-width: fit-content;
 }
 
 .navbar {
@@ -19,10 +17,6 @@ body {
   display: flex;
   justify-content:space-evenly;
   align-items: center;
-  width:100%;
-  position: sticky;
-  left: 0;
-  top: 0;
 }
 
 .nav-left {
@@ -238,15 +232,4 @@ margin-right: 8px;
 }
 .view-more{
     border-top:4px solid #ddd;
-}
-
-.divr{
-  width: 200px;
-  height: 150px;
-  background-color: aqua;
-}
-
-.rr{
-  display: flex;
-  gap: 5px;
 }
