@@ -1,0 +1,227 @@
+# Cafe Business Logic II - README
+
+## Overview
+
+This project demonstrates Object-Oriented Programming (OOP) concepts in Java by creating custom classes for products and customer orders. The application simulates a simple coffee shop ordering system where customers can place orders, add products, check order status, calculate totals, and display order details.
+
+---
+
+## Objectives
+
+* Practice creating custom classes.
+* Implement constructors and overloaded constructors.
+* Use private member variables.
+* Implement getters and setters.
+* Work with ArrayLists.
+* Create and use object methods.
+* Apply Object-Oriented Programming principles.
+
+---
+
+## Project Structure
+
+```text
+src/
+└── com.cafe
+    ├── Product.java
+    ├── CustomerOrder.java
+    └── CoffeeShopTest.java
+```
+
+---
+
+## Classes
+
+### Product.java
+
+Represents a menu item in the coffee shop.
+
+#### Attributes
+
+* name (String)
+* price (double)
+
+#### Methods
+
+* Constructor
+* Getters
+* Setters
+
+---
+
+### CustomerOrder.java
+
+Represents a customer order.
+
+#### Attributes
+
+* name (String)
+* ready (boolean)
+* products (ArrayList<Product>)
+
+#### Methods
+
+##### Constructors
+
+* CustomerOrder()
+* CustomerOrder(String name)
+
+##### Business Logic Methods
+
+* addItem(Product product)
+* getStatusMessage()
+* getOrderTotal()
+* display()
+
+##### Accessor & Mutator Methods
+
+* getName()
+* setName()
+* isReady()
+* setReady()
+* getProducts()
+* setProducts()
+
+---
+
+### CoffeeShopTest.java
+
+Used to test all application functionality.
+
+#### Test Cases
+
+* Create products.
+* Create two guest orders.
+* Create three named orders.
+* Add products to orders.
+* Mark some orders as ready.
+* Test status messages.
+* Test order total calculations.
+* Display all order details.
+
+---
+
+## Features Implemented
+
+### Add Products
+
+Products can be added to an order using:
+
+```java
+order1.addItem(coffee);
+```
+
+### Order Status Messages
+
+Ready Order:
+
+```text
+Your order is ready.
+```
+
+Not Ready Order:
+
+```text
+Thank you for waiting. Your order will be ready soon.
+```
+
+### Calculate Order Total
+
+Example:
+
+```java
+System.out.println(order1.getOrderTotal());
+```
+
+### Display Order Information
+
+Example Output:
+
+```text
+Customer Name: Murad
+Drip Coffee - $1.5
+Cappuccino - $3.5
+Total: $5.0
+```
+
+---
+
+## Sample Output
+
+```text
+Your order is ready.
+Thank you for waiting. Your order will be ready soon.
+3.75
+
+-----------------------------
+Customer Name: Guest
+Drip Coffee - $1.5
+Muffin - $2.25
+Total: $3.75
+-----------------------------
+Customer Name: Guest
+Tea - $1.75
+Latte - $4.0
+Total: $5.75
+-----------------------------
+Customer Name: Murad
+Drip Coffee - $1.5
+Cappuccino - $3.5
+Total: $5.0
+-----------------------------
+Customer Name: Ramez
+Latte - $4.0
+Muffin - $2.25
+Total: $6.25
+-----------------------------
+Customer Name: Abdullah
+Tea - $1.75
+Cappuccino - $3.5
+Total: $5.25
+-----------------------------
+```
+
+---
+
+## Concepts Used
+
+* Classes and Objects
+* Constructors
+* Overloaded Constructors
+* Encapsulation
+* Private Variables
+* Getters and Setters
+* ArrayList
+* Loops
+* Conditional Statements
+* Object-Oriented Programming (OOP)
+
+---
+
+## How to Run
+
+1. Open Eclipse.
+2. Import or create the project.
+3. Create the package:
+
+```text
+com.cafe
+```
+
+4. Add the three Java files.
+5. Run:
+
+```text
+CoffeeShopTest.java
+```
+
+6. View the results in the Console window.
+
+---
+
+## Author
+
+Murad Shaheen
+
+Java OOP Practice Assignment
+Cafe Business Logic II
