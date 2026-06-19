@@ -1,0 +1,21 @@
+# Cafe Java
+
+A simple Java application that uses custom Item and Order classes to simulate a cafe ordering system.
+
+## Files
+
+- Item.java
+- Order.java
+- TestOrders.java
+
+## Concepts
+
+- Classes and Objects
+- ArrayList
+- Object Instantiation
+- OOP Basics
+
+## Author
+
+Murad Shaheen
+and chaker 

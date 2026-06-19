@@ -1,0 +1,25 @@
+# Exceptions Assignment
+
+## Description
+This Java assignment practices ArrayList, generics, casting, and exception handling.
+
+## File
+- Exceptions.java
+
+## What the program does
+- Creates an ArrayList with Strings and Integers
+- Tries to cast each item to Integer
+- Uses try/catch to handle ClassCastException
+- Prints the error, index, and value
+- Continues running after errors
+
+## How to Run
+1. Open Eclipse
+2. Create a Java Project named ExceptionsAssignment
+3. Create a class named Exceptions
+4. Paste the code
+5. Run Exceptions.java
+
+## Expected Output
+Some values will cause errors because they are Strings, not Integers.
+The Integer value 48 will be cast successfully.

@@ -45,7 +45,7 @@ public class CafeUtil {
 		System.out.println("there are "+ customer.size()+" people front of you");
 		customer.add(name);
 		for(int i=0;i<customer.size();i++) {
-			System.out.print(customer.get(i));
+			System.out.println(customer.get(i));
 		}
 	}
 
