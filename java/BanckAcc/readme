@@ -1,0 +1,21 @@
+# Bank Account
+
+## Description
+A Java application that simulates a bank account with checking and savings balances. Users can deposit, withdraw, and view account information.
+
+## Features
+- Deposit money
+- Withdraw money
+- View checking balance
+- View savings balance
+- View total balance
+- Random 10-digit account number
+- Track total accounts created
+
+## Files
+- BankAcc.java
+- BankTest.java
+
+## Screenshot
+
+![Program Output](img/screenshot.png)
