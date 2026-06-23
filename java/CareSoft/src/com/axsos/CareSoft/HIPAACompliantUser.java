@@ -1,0 +1,6 @@
+package com.axsos.CareSoft;
+
+public interface HIPAACompliantUser {
+    boolean assignPIN(int pin);
+    boolean accessAuthorized(Integer confirmedAuthID);
+}

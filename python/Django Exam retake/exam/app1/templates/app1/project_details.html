@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>project details</title>
+    </head>
+    <body>
+        <a href="/logout">logout</a>
+        <a href="/dashboard">dashboard</a>
+        <h1>{{ project.name }}</h1>
+        <p><strong>project name:</strong> {{ project.name }}</p>
+        <p><strong>project owner:</strong>{{ project.owner.first_name}}
+            {{project.owner.last_name}}</p>
+        <p>
+            {{ project.description }}
+        </p>
+        <p><strong>start date:</strong>{{ project.start_date }}</p>
+        <p><strong>End date:</strong>{{project.end_date}}</p>
+        <h2>{{ project.name }} team</h2>
+        <ul>
+            {% for member in project.members.all %}
+            <li>
+                {{ member.first_name }} {{ member.last_name }}
+                {% if member.id == user.id and project.owner.id != user.id %}
+                <a href="/project/{{project.id}}/leave">x</a>
+                {% endif %}
+            </li>
+            {% endfor %}
+        </ul>
+        {% if project.owner.id == user.id %}
+        <a href="/project/{{project.id}}/edit">
+            <button>delete project</button>
+        </a>
+        {% endif %}
+    </body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>edit project</title>
+    </head>
+    <body>
+        <a href="/logout">logout</a>
+        <h1>hello{{ request.session.user_name }}</h1>
+        <h2>edit {{ project.name }}</h2>
+        {% if message in message %}
+        <p style="color:red;">{{ message }}</p>
+        {% endfor %}
+        {%endif%}
+        <form action="/project/{{ project.id }}/update" method="POST">
+            {% csrf_token %}
+            <p>project name </p>
+            <input type="text" name="name" value="{{project.name}}">
+            <p>description</p>
+            <textarea name="description">{{ project.description }}</textarea>
+            <p>start date</p>
+            <input type="date" name="start_date"
+                value="{{ project.start_dat|date:'y-m-d' }}">
+            <br><br>
+            <button type="submit">update</button>
+            <a href="/project/{{ project.id }}">
+                <button type="button">back</button>
+            </a>
+        </form>
+    </body>
+</html>

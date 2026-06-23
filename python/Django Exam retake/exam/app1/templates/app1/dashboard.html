@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>dashboard</title>
+    </head>
+    <body>
+        <a href="/create_project_page">
+    <button>Create Project</button>
+</a>
+        <br><br>
+        <table border="1" cellpadding="10">
+            <tr>
+                <th>ID</th>
+                <th>project name</th>
+                <th>project owner</th>
+                <th>action</th>
+            </tr>
+            {% for project in projects %}
+            <tr>
+                <td>{{ project.id }}</td>
+                <td>
+                    <a href="/project/{{ project.id }}">project name</a>
+                </td>
+                <td>{{project.oner.first_name}}{{project.owner.last_name}}</td>
+                <td>
+                    {% if project.owner.id == user.id %}
+                    <a href="/project/{{ project.id }}/delete">
+                        <button>delete</button>
+                    </a>
+                    {% elif user in project.members.all %}
+                    <a href="/project/{{ project.id }}/leave">
+                        <button>separate</button>
+                    </a>
+                    {% endif %}
+                </td>
+            </tr>
+            {% endfor %}
+        </table>
+    </body>
+</html>
