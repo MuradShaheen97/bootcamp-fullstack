@@ -1,0 +1,26 @@
+body {
+	font-family: Arial, sans-serif;
+	text-align: center;
+	margin-top: 100px;
+}
+
+.container {
+	width: 500px;
+	margin: auto;
+}
+
+.links {
+	display: flex;
+	justify-content: center;
+	gap: 40px;
+}
+
+a {
+	font-size: 22px;
+	text-decoration: none;
+	color: blue;
+}
+
+h1 {
+	color: #333;
+}
