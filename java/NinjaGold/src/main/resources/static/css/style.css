@@ -1,0 +1,50 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    width: 900px;
+    margin: 30px auto;
+}
+
+.places {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.card {
+    border: 2px solid black;
+    width: 150px;
+    padding: 15px;
+    text-align: center;
+}
+
+button {
+    background-color: #f1c232;
+    border: 2px solid black;
+    padding: 8px 12px;
+    cursor: pointer;
+}
+
+.reset {
+    margin-top: 20px;
+    background-color: red;
+    color: white;
+}
+
+.activities {
+    border: 2px solid black;
+    height: 200px;
+    overflow-y: scroll;
+    padding: 10px;
+}
+
+.activities p {
+    color: green;
+}
+
+.prison {
+    text-align: center;
+    color: red;
+}
