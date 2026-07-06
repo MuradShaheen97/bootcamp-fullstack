@@ -25,21 +25,24 @@ public class BookService {
 		return bookRepo.findById(id).orElse(null);
 	}
 
-	public Books createBook(String title, String descreption, String languge, Integer pages) {
-		Books book = new Books(title, descreption, languge, pages);
+	public Books createBook(Books book) {
 		return bookRepo.save(book);
 	}
 
-	public Books updateBook(long id, String title, String descreption, String languge, Integer pages) {
+	public Books updateBook(long id, Books book) {
 		Optional<Books> optBook = bookRepo.findById(id);
 		if (optBook.isPresent()) {
-			Books book = optBook.get();
-			book.setTitle(title);
-			book.setDescreption(descreption);
-			book.setLanguage(languge);
-			book.setPages(pages);
-			bookRepo.save(book);
-			return book;
+			Books upbook = optBook.get();
+
+			// Map the updated form values onto the existing database record
+			upbook.setTitle(book.getTitle());
+			upbook.setLanguage(book.getLanguage());
+			upbook.setPages(book.getPages());
+
+			// Handle your specific spelling variant ("description")
+			upbook.setDescription(book.getDescription());
+
+			return bookRepo.save(upbook);
 		}
 		return null;
 	}

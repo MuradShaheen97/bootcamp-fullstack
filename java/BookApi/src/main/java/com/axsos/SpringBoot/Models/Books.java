@@ -20,7 +20,7 @@ public class Books {
 
 	@NotNull
 	@Size(min = 2, max = 255)
-	private String descreption;
+	private String description;
 
 	@NotNull
 	@Size(min = 2, max = 15)
@@ -43,7 +43,7 @@ public class Books {
 
 	public Books(String title, String descreption, String language, Integer pages) {
 		this.title = title;
-		this.descreption = descreption;
+		this.description = descreption;
 		this.language = language;
 		this.pages = pages;
 	}
@@ -64,12 +64,12 @@ public class Books {
 		this.title = title;
 	}
 
-	public String getDescreption() {
-		return descreption;
+	public String getDescription() {
+		return description;
 	}
 
-	public void setDescreption(String descreption) {
-		this.descreption = descreption;
+	public void setDescription(String descreption) {
+		this.description = descreption;
 	}
 
 	public String getLanguage() {
