@@ -72,6 +72,14 @@ public class Orders {
 	
 	
 
+	public Users getUser() {
+		return user;
+	}
+
+	public void setUser(Users user) {
+		this.user = user;
+	}
+
 	public Orders(String ordername, Date orderDate) {
 		this.ordername = ordername;
 		this.orderDate = orderDate;

@@ -1,0 +1,30 @@
+SPRING BOOT EXAM CHECKLIST
+
+[ ] Database created: exam_app_db
+[ ] MySQL password correct
+[ ] 4 packages created
+[ ] User.java
+[ ] LoginUser.java
+[ ] Main Entity.java
+[ ] UserRepository.java
+[ ] EntityRepository.java
+[ ] UserService.java
+[ ] EntityService.java
+[ ] UserController.java
+[ ] EntityController.java
+[ ] login.jsp
+[ ] dashboard.jsp
+[ ] new.jsp
+[ ] edit.jsp
+[ ] show.jsp
+[ ] Register works
+[ ] Login works
+[ ] Create works
+[ ] Read works
+[ ] Update works
+[ ] Delete works
+
+IMPORTANT:
+@Valid must be followed immediately by BindingResult.
+Model attribute names must match in Controller and JSP.
+Create the database before running.

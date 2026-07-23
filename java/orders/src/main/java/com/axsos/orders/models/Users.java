@@ -1,14 +1,17 @@
 package com.axsos.orders.models;
 
 import java.util.Date;
+import java.util.List;
 
 import org.springframework.format.annotation.DateTimeFormat;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
+import jakarta.persistence.FetchType;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.OneToMany;
 import jakarta.persistence.PrePersist;
 import jakarta.persistence.PreUpdate;
 import jakarta.persistence.Table;
@@ -39,11 +42,51 @@ public class Users {
 
 	@DateTimeFormat(pattern = "yyyy-MM-dd")
 	private Date updatedAt;
+	
+	
+	
+	@OneToMany(mappedBy = "user" , fetch = FetchType.LAZY )
+	private List<Orders> orders ;
+	
+	 
+	
+
+	public List<Orders> getOrders() {
+		return orders;
+	}
+
+
+
+
+
+
+
+
+
+	public void setOrders(List<Orders> orders) {
+		this.orders = orders;
+	}
+
+
+
+
+
+
+
+
 
 	public Users(String firstName, String lastName) {
 		this.firstName = firstName;
 		this.lastName = lastName;
 	}
+	
+	
+	
+	
+	
+	
+	
+	
 
 	public Long getId() {
 		return id;
