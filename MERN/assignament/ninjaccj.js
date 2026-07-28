@@ -47,12 +47,17 @@ class Effect extends Card {
 
   // Play the Effect on a Unit
   play(target) {
+    // Make sure the target is a Unit
     if (!(target instanceof Unit)) {
       throw new Error("Effect target must be a Unit!");
     }
 
-    // Increase or decrease the selected stat
-    target[this.stat] += this.magnitude;
+    // Update the correct stat
+    if (this.stat === "power") {
+      target.power += this.magnitude;
+    } else if (this.stat === "resilience") {
+      target.resilience += this.magnitude;
+    }
 
     console.log(`${this.name} was played on ${target.name}.`);
     console.log(this.text);
