@@ -7,8 +7,22 @@ const Form = () => {
   const [password, setPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
 
+  // Runs when the form is submitted
+  const submitHandler = (e) => {
+    e.preventDefault(); // Prevent page refresh
+
+    console.log({
+      firstName,
+      lastName,
+      email,
+      password,
+      confirmPassword,
+    });
+  };
+
   return (
-    <form>
+    <form onSubmit={submitHandler}>
+      {/* First Name */}
       <div>
         <label htmlFor="firstName">First Name</label>
 
@@ -25,6 +39,7 @@ const Form = () => {
         )}
       </div>
 
+      {/* Last Name */}
       <div>
         <label htmlFor="lastName">Last Name</label>
 
@@ -41,6 +56,7 @@ const Form = () => {
         )}
       </div>
 
+      {/* Email */}
       <div>
         <label htmlFor="email">Email</label>
 
@@ -57,6 +73,7 @@ const Form = () => {
         )}
       </div>
 
+      {/* Password */}
       <div>
         <label htmlFor="password">Password</label>
 
@@ -73,6 +90,7 @@ const Form = () => {
         )}
       </div>
 
+      {/* Confirm Password */}
       <div>
         <label htmlFor="confirmPassword">Confirm Password</label>
 
@@ -88,6 +106,34 @@ const Form = () => {
           <p>Passwords must match.</p>
         )}
       </div>
+
+      {/* Submit Button */}
+      <button type="submit">Submit</button>
+
+      <hr />
+
+      {/* Display Form Data */}
+      <h2>Your Form Data</h2>
+
+      <p>
+        <strong>First Name:</strong> {firstName}
+      </p>
+
+      <p>
+        <strong>Last Name:</strong> {lastName}
+      </p>
+
+      <p>
+        <strong>Email:</strong> {email}
+      </p>
+
+      <p>
+        <strong>Password:</strong> {password}
+      </p>
+
+      <p>
+        <strong>Confirm Password:</strong> {confirmPassword}
+      </p>
     </form>
   );
 };
