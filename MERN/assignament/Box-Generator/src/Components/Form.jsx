@@ -23,26 +23,26 @@ const Form = ({ boxes, setBoxes }) => {
   return (
     <form onSubmit={submitHandler}>
       <div>
-        <label>Color</label>
-
+        <label htmlFor="color">Color</label>
         <input
           type="text"
+          id="color"
           value={color}
           onChange={(e) => setColor(e.target.value)}
         />
       </div>
 
       <div>
-        <label>Size</label>
-
+        <label htmlFor="size">Size</label>
         <input
           type="number"
+          id="size"
           value={size}
           onChange={(e) => setSize(e.target.value)}
         />
       </div>
 
-      <button>Add</button>
+      <button type="submit">Add</button>
     </form>
   );
 };

@@ -1,74 +1,76 @@
-import { useState } from "react";
-
-const Form = () => {
-  const [firstName, setfirstName] = useState("");
-  const [lastName, setlastName] = useState("");
-  const [Email, setEmail] = useState("");
-  const [Password, setPassword] = useState("");
-  const [confirmPassword, setconfirmPassword] = useState("");
-
+const Form = ({
+  firstName,
+  setFirstName,
+  lastName,
+  setLastName,
+  email,
+  setEmail,
+  password,
+  setPassword,
+  confirmPassword,
+  setConfirmPassword,
+}) => {
   return (
     <form>
       <div>
-        <label htmlFor="firstName">firstName</label>
+        <label htmlFor="firstName">First Name</label>
+
         <input
           type="text"
-          name="firstName"
           id="firstName"
+          name="firstName"
           value={firstName}
-          onChange={(e) => setfirstName(e.target.value)}
+          onChange={(e) => setFirstName(e.target.value)}
         />
       </div>
+
       <div>
-        <label htmlFor="lastName">lastName</label>
+        <label htmlFor="lastName">Last Name</label>
+
         <input
           type="text"
-          name="lastName"
           id="lastName"
+          name="lastName"
           value={lastName}
-          onChange={(e) => setlastName(e.target.value)}
+          onChange={(e) => setLastName(e.target.value)}
         />
       </div>
+
       <div>
-        <label htmlFor="Email">Email</label>
+        <label htmlFor="email">Email</label>
+
         <input
           type="email"
-          name="Email"
-          id="Email"
-          value={Email}
+          id="email"
+          name="email"
+          value={email}
           onChange={(e) => setEmail(e.target.value)}
         />
       </div>
+
       <div>
-        <label htmlFor="Password">Password</label>
+        <label htmlFor="password">Password</label>
+
         <input
           type="password"
-          name="Password"
-          id="Password"
-          value={Password}
+          id="password"
+          name="password"
+          value={password}
           onChange={(e) => setPassword(e.target.value)}
         />
       </div>
+
       <div>
-        <label htmlFor="confirmPassword">confirmPassword</label>
+        <label htmlFor="confirmPassword">Confirm Password</label>
+
         <input
           type="password"
-          name="confirmPassword"
           id="confirmPassword"
+          name="confirmPassword"
           value={confirmPassword}
-          onChange={(e) => setconfirmPassword(e.target.value)}
+          onChange={(e) => setConfirmPassword(e.target.value)}
         />
       </div>
-
-      <hr />
-
-      <h2>Your Form Data</h2>
-
-      <p>First Name: {firstName}</p>
-      <p>Last Name: {lastName}</p>
-      <p>Email: {Email}</p>
-      <p>Password: {Password}</p>
-      <p>Confirm Password: {confirmPassword}</p>
     </form>
   );
 };
