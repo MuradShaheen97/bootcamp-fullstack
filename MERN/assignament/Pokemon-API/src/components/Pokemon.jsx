@@ -1,17 +1,16 @@
 import { useState } from "react";
+import axios from "axios";
 
 const Pokemon = () => {
   const [pokemon, setPokemon] = useState([]);
 
   const fetchPokemon = async () => {
     try {
-      const response = await fetch(
+      const response = await axios.get(
         "https://pokeapi.co/api/v2/pokemon?limit=807",
       );
 
-      const data = await response.json();
-
-      setPokemon(data.results);
+      setPokemon(response.data.results);
     } catch (error) {
       console.log("Error fetching Pokemon:", error);
     }
@@ -19,7 +18,7 @@ const Pokemon = () => {
 
   return (
     <div>
-      <button onClick={fetchPokemon}>(Fetch (find) Pokemon)</button>
+      <button onClick={fetchPokemon}>Fetch or find Pokemon</button>
 
       <ul>
         {pokemon.map((item) => (
